@@ -1,3 +1,4 @@
+
 const images = [
   {
     preview:
@@ -65,6 +66,7 @@ const images = [
 ];
 
 
+
 const markup = images.map(image => {
     return `<li class="gallery-item">
 	<a class="gallery-link" href="${image.original}">
@@ -77,3 +79,20 @@ const markup = images.map(image => {
 </li>
 `
 }).join(``);
+
+const gallery = document.querySelector(`.gallery`);
+
+gallery.insertAdjacentHTML(`beforeend`, markup);
+
+// Описаний в документації
+import SimpleLightbox from "simpleLightbox";
+// Додатковий імпорт стилів
+import "simplelightbox/dist/simple-lightbox.min.css";
+
+let galleryLibrary = new SimpleLightbox(`.gallery a`, {
+    captions: true,
+    captionsData: `alt`,
+    captionDelay: 250,
+})
+
+console.log(SimpleLightbox);
