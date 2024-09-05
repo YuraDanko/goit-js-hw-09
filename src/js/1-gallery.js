@@ -85,7 +85,7 @@ const gallery = document.querySelector(`.gallery`);
 gallery.insertAdjacentHTML(`beforeend`, markup);
 
 // Описаний в документації
-import SimpleLightbox from "simpleLightbox";
+import SimpleLightbox from "simplelightbox";
 // Додатковий імпорт стилів
 import "simplelightbox/dist/simple-lightbox.min.css";
 
