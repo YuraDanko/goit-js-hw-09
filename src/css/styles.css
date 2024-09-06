@@ -34,3 +34,63 @@ body{
 .gallery-image:hover {
   transform: scale(1.07);
 }
+
+form {
+  width: 360px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+input[type="email"],
+textarea {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="email"]:hover,
+textarea:hover {
+  border: 1px solid #000000;
+}
+
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #808080;
+  outline: none;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+  background: #4e75ff;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
